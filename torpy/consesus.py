@@ -472,8 +472,6 @@ class TorConsensus:
         if not HAVE_IPFIRE:
             return True
 
-        LocationDatabase.download('location.db')
-
         global locdb
         if locdb is None:
             locdb = LocationDatabase('location.db')
